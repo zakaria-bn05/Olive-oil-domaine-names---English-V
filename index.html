@@ -81,10 +81,13 @@
         <nav
             class="sticky md:top-0 z-30 bg-white/60 backdrop-blur-sm flex w-full h-16 px-[4%] items-center justify-between md:gap-1">
 
-            <!-- Mobile Menu Button (Left Side for English) -->
-            <button id="mobile-menu-btn" class="md:hidden text-green-900 text-2xl focus:outline-none">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="flex items-center gap-[2%]">
+                <img src="assets/logo.png" class="w-8 cursor-pointer" alt="OliveDomains Logo">
+                <div>
+                    <p class="text-left font-bold">OliveDomains</p>
+                    <p class="text-xs font-cairo w-30">.COM domains for olive oil brands</p>
+                </div>
+            </div>
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-4">
@@ -95,18 +98,15 @@
                     Us</a>
             </div>
 
-            <div class="flex items-center gap-[2%]">
-                <div>
-                    <p class="text-left font-bold">OliveDomains</p>
-                    <p class="text-xs font-cairo w-30">.COM domains for olive oil brands</p>
-                </div>
-                <img src="assets/logo.png" class="w-8 cursor-pointer" alt="OliveDomains Logo">
-            </div>
+            <!-- Mobile Menu Button (Right Side for English) -->
+            <button id="mobile-menu-btn" class="md:hidden text-green-900 text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
 
-        <!-- Mobile Sidebar (Slides from Left for English) -->
+        <!-- Mobile Sidebar (Slides from Right for English) -->
         <div id="mobile-sidebar"
-            class="fixed top-0 left-0 h-full w-64 bg-white shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
+            class="fixed top-0 right-0 h-full w-64 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
             <div class="flex flex-col h-full">
                 <!-- Sidebar Header -->
                 <div class="flex items-center justify-between p-4 border-b border-gray-200">
@@ -140,101 +140,95 @@
             </div>
         </div>
 
-        <!-- Overlay -->
         <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40 md:hidden"></div>
 
         <header class="header flex items-center justify-center z-10 relative ">
             <div class="bg-white rounded-2xl backdrop-blur-sm bg-opacity-30 w-4/5 p-11 flex flex-col gap-3 ">
-                <h1 class="font-cairo text-4xl font-bold text-right ">Start your olive oil brand today.</h1>
-                <p class="text-gray-700 text-right text-ms ">
+                <h1 class="font-cairo text-4xl font-bold text-left ">Start your olive oil brand today.</h1>
+                <p class="text-gray-700 text-left text-ms ">
                     We offer short, memorable .COM domain names ready to launch.
                 </p>
-                <div class="flex md:flex-row flex-col gap-3 mt-4 justify-end">
-                    <button id="full-list-2" class="font-cairo px-3 py-2 rounded-md border-2 border-green-900 ">View
-                        Full List
-                    </button>
+                <div class="flex md:flex-row flex-col gap-3 mt-4 justify-start">
                     <button class="special font-cairo bg-olive-btn px-3 py-2 text-gray-100 rounded-md">Browse
                         Featured Domains
+                    </button>
+                    <button id="full-list-2" class="font-cairo px-3 py-2 rounded-md border-2 border-green-900 ">View
+                        Full List
                     </button>
                 </div>
             </div>
         </header>
-        <article class="px-[8%] py-10">
-            <h1 class="font-cairo text-2xl font-bold text-right">Featured Domains</h1>
-            <p class="font-cairo text-xm text-gray-700 text-right">Top ready-to-use domains - short, premium, and
+        <article class="px-[3%] py-10">
+            <h1 class="font-cairo text-2xl font-bold text-left">Featured Domains</h1>
+            <p class="font-cairo text-xm text-gray-700 text-left">Top ready-to-use domains - short, premium, and
                 brand-ready.
             </p>
             <div class="flex gap-3 flex-wrap justify-center">
                 <div
                     class="special-domaine bg-white border-2 border-gray-300 rounded-md p-5 mt-5 w-100 flex flex-col gap-3 ">
-                    <p class=" font-cairo text-xm text-gray-700 text-right">Domain
+                    <p class=" font-cairo text-xm text-gray-700 text-left">Domain
                     </p>
-                    <p class=" font-cairo text-xl text-gray-700 font-bold text-right">goldenzayt.com
+                    <p class=" font-cairo text-xl text-gray-700 font-bold text-left">goldenzayt.com
                     </p>
-                    <p class=" font-cairo text-xm text-gray-700 text-right">A premium, easy-to-remember name for olive
+                    <p class=" font-cairo text-xm text-gray-700 text-left">A premium, easy-to-remember name for olive
                         oil brands
                     </p>
                     <div class="flex items-center mt-auto w-full justify-between">
-
-                        <div class="justify-start">
+                        <p class=" font-cairo text-xl text-gray-700 font-bold mt-3 ">$80</p>
+                        <div class="justify-end">
+                            <button class="selling bg-olive-btn px-3 py-2 text-gray-100 rounded-md mt-3">Buy Now
+                            </button>
                             <button class="negotiate font-cairo bg-olive-btn px-3 py-2 bg-gray-100 rounded-md mt-3">
                                 Negotiate
                             </button>
-                            <button class="selling bg-olive-btn px-3 py-2 text-gray-100 rounded-md mt-3">Buy Now
-                            </button>
                         </div>
-                        <p class=" font-cairo text-xl text-gray-700 font-bold mt-3 ">$80</p>
-
                     </div>
                 </div>
                 <div
                     class="special-domaine bg-white border-2 border-gray-300 rounded-md p-5 w-100 mt-5 flex flex-col gap-3 ">
-                    <p class=" font-cairo text-xm text-gray-700 text-right">Domain
+                    <p class=" font-cairo text-xm text-gray-700 text-left">Domain
                     </p>
-                    <p class=" font-cairo text-xl text-gray-700 font-bold text-right">luxuryzayt.com
+                    <p class=" font-cairo text-xl text-gray-700 font-bold text-left">luxuryzayt.com
                     </p>
-                    <p class=" font-cairo text-xm text-gray-700 text-right">Suitable for premium products and luxury
+                    <p class=" font-cairo text-xm text-gray-700 text-left">Suitable for premium products and luxury
                         markets
                     </p>
                     <div class="flex items-center mt-auto w-full justify-between">
-
-                        <div class="justify-start">
-                            <button class="negotiate font-cairo bg-olive-btn px-3 py-2 bg-gray-100 rounded-md mt-3">
-                                Negotiate
-                            </button>
+                        <p class=" font-cairo text-xl text-gray-700 font-bold mt-3 ">$80</p>
+                        <div class="justify-end">
                             <button href="" class="selling bg-olive-btn px-3 py-2 text-gray-100 rounded-md mt-3">Buy
                                 Now
                             </button>
+                            <button class="negotiate font-cairo bg-olive-btn px-3 py-2 bg-gray-100 rounded-md mt-3">
+                                Negotiate
+                            </button>
                         </div>
-                        <p class=" font-cairo text-xl text-gray-700 font-bold mt-3 ">$80</p>
                     </div>
                 </div>
                 <div
                     class="special-domaine bg-white border-2 border-gray-300 rounded-md p-5 mt-5 w-100 flex flex-col gap-3 ">
-                    <p class=" font-cairo text-xm text-gray-700 text-right">Domain
+                    <p class=" font-cairo text-xm text-gray-700 text-left">Domain
                     </p>
-                    <p class=" font-cairo text-xl text-gray-700 font-bold text-right">organiczayt.com
+                    <p class=" font-cairo text-xl text-gray-700 font-bold text-left">organiczayt.com
                     </p>
-                    <p class=" font-cairo text-xm text-gray-700 text-right">Perfect for organic and certified-organic
+                    <p class=" font-cairo text-xm text-gray-700 text-left">Perfect for organic and certified-organic
                         products
                     </p>
                     <div class="flex items-center w-full justify-between">
-
-                        <div class="justify-start mt-auto">
+                        <p class=" font-cairo text-xl text-gray-700 font-bold mt-3 ">$80</p>
+                        <div class="justify-end mt-auto">
+                            <button class="selling bg-olive-btn px-3 py-2 text-gray-100 rounded-md mt-3">Buy Now
+                            </button>
                             <button class="negotiate font-cairo bg-olive-btn px-3 py-2 bg-gray-100 rounded-md mt-3">
                                 Negotiate
                             </button>
-                            <button class="selling bg-olive-btn px-3 py-2 text-gray-100 rounded-md mt-3">Buy Now
-                            </button>
                         </div>
-                        <p class=" font-cairo text-xl text-gray-700 font-bold mt-3 ">$80</p>
-
                     </div>
                 </div>
         </article>
-        <article class="px-[8%] py-10">
-            <h1 class="font-cairo text-2xl font-bold text-right">Full Domain List</h1>
-            <p class="font-cairo text-xm text-gray-700 text-right">Top ready-to-use domains - short, premium, and
+        <article class="px-[3%] py-10">
+            <h1 class="font-cairo text-2xl font-bold text-left">Full Domain List</h1>
+            <p class="font-cairo text-xm text-gray-700 text-left">Top ready-to-use domains - short, premium, and
                 brand-ready.
             </p>
             <div class="flex justify-center w-full">
@@ -346,45 +340,50 @@
             </div>
 
         </article>
-        <article class="px-[8%] py-10">
-            <h1 class="font-cairo text-2xl font-bold text-right">Why choose our domains?</h1>
-            <div class="flex flex-wrap gap-4 justify-end">
+        <article class="px-[3%] py-10">
+            <h1 class="font-cairo text-2xl font-bold text-left">Why choose our domains?</h1>
+            <div class="flex flex-wrap gap-4 justify-start">
+                <div class=" flex gap-5 mt-5 p-1 flex-row">
+                    <img src=" assets/pro-logo.png" class="buy-reason w-12 h-12 rounded-full" alt="">
+                    <div class="text-left">
+                        <p class="font-bold">Professional</p>
+                        <p class="text-[15px]">.COM domains only, suitable for the global market</p>
+                    </div>
+                </div>
+                <div class="flex gap-5 mt-5 p-1 flex-row">
+                    <img src="assets/easy-logo.png" class="buy-reason w-12 h-12 rounded-full" alt="">
+                    <div class="text-left">
+                        <p class="font-bold">Simple</p>
+                        <p class="text-[15px]">Short, clear names that avoid complexity</p>
+                    </div>
+                </div>
                 <div>
-                    <div class="flex gap-5 mt-5 p-1 flex-row-reverse">
-                        <img src="assets/bonus-logo.png" class="buy-reason w-12 h-12 rounded-full ml-auto" alt="">
-                        <div class="text-right">
+                    <div class="flex gap-5 mt-5 p-1 flex-row">
+                        <img src="assets/bonus-logo.png" class="buy-reason w-12 h-12 rounded-full" alt="">
+                        <div class="text-left">
                             <p class="font-bold">Free Bonus</p>
                             <p class="text-[15px]">A professional landing page free after purchasing any of our domains
                             </p>
                         </div>
                     </div>
-
                     <button id="display-landing-page"
                         class=" bg-olive-btn my-4 p-2 text-ms text-gray-100 rounded-md w-max">Preview
                         <i class="fa-solid fa-display"></i></button>
                 </div>
-                <div class="flex gap-5 mt-5 p-1 flex-row-reverse">
-                    <img src="assets/easy-logo.png" class="buy-reason w-12 h-12 rounded-full" alt="">
-                    <div class="text-right">
-                        <p class="font-bold">Simplicity</p>
-                        <p class="text-[15px]">Short, clear names that avoid complexity</p>
-                    </div>
-                </div>
-                <div class=" flex gap-5 mt-5 p-1 flex-row-reverse">
-                    <img src=" assets/pro-logo.png" class="buy-reason w-12 h-12 rounded-full" alt="">
-                    <div class="text-right">
-                        <p class="font-bold">Professionalism</p>
-                        <p class="text-[15px]">.COM domains only — suitable for the global market</p>
-                    </div>
-                </div>
             </div>
-            </div>
-
         </article>
-        <article class="px-[8%] mt-10 bg-white">
+        <article class="px-[3%] mt-10 bg-white">
             <hr>
             <div class="flex flex-wrap justify-between pt-10">
-                <form class="flex flex-col gap-3 mr-10 w-[600px] rounded-md" action="https://formspree.io/f/xnnwjaby"
+                <div class="flex flex-col gap-3 text-left">
+                    <h1 class="font-cairo text-2xl font-bold ">Contact Us</h1>
+                    <p class="font-cairo text-xm text-gray-700 m-none p-none ">
+                        Contact us via email. We will respond within 24 hours.
+                    </p>
+                    <a href="">Gmail </a>
+                    <a href="mailto:bouchmlaanas4@gmail.com">bouchmlaanas4@gmail.com</a>
+                </div>
+                <form class="flex flex-col gap-3 ml-10 w-[600px] rounded-md" action="https://formspree.io/f/xnnwjaby"
                     method="POST">
                     <input type="text" name="name"
                         class="w-4/5 font-cairo text-ms h-[50px] rounded-md  border-2 border-gray-200 p-3 "
@@ -401,14 +400,6 @@
                         <small class="text-gray-600">Or use email for direct conversation</small>
                     </div>
                 </form>
-                <div class="flex flex-col gap-3 text-right">
-                    <h1 class="font-cairo text-2xl font-bold ">Contact Us</h1>
-                    <p class="font-cairo text-xm text-gray-700 m-none p-none ">
-                        Contact us via email. We will respond within 24 hours.
-                    </p>
-                    <a href="">Gmail </a>
-                    <a href="mailto:bouchmlaanas4@gmail.com">bouchmlaanas4@gmail.com</a>
-                </div>
             </div>
             <br>
             <hr>
